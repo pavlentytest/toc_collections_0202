@@ -2,6 +2,16 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        String[] strs = str.split(" ");
+        ArrayList<String> arrL = new ArrayList();
+        // arrL.size() <- метод
+        Collections.addAll(arrL, strs);
+        Collections.addAll(arrL, "sdfsdf","sdfsdf","333");
+        System.out.println(arrL);
+
         //  Collection - интерфейс
         // Collections - класс
         //Collections.binarySearch()
@@ -98,8 +108,8 @@ public class Main {
 
         Stack<String> stack = new Stack<>();
         Queue<String> queue = new ArrayDeque<>();
-        String[] str = {"1","2","3","4","5"};
-        for(String s: str) {
+        String[] str2 = {"1","2","3","4","5"};
+        for(String s: str2) {
             stack.push(s); // добавляем в конец стека
             queue.offer(s);
         }
